@@ -12,7 +12,7 @@ public class S02_statements {
 
         int anotherVariable = 50;
         myVariable--;
-        System.out.println("myVariable " + myVariable);
+        System.out.println("anotherVariable " + anotherVariable);
 
         if(myVariable ==0){
             System.out.println("It's now zero.");
