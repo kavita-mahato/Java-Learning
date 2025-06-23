@@ -83,7 +83,7 @@ The codes are based on the **"Java Programming Masterclass for Software Develope
 
 ## ✍️ Author
 
-- **Name**: Sourav Kumar
+- **Name**: Kavita Mahato
 - **GitHub Profile**: [@kavita-mahato](https://github.com/kavita-mahato)
 - **LinkedIn**: [Kavita Mahato](https://linkedin.com/in/kavita-mahato)
 
