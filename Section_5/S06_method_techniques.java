@@ -8,21 +8,23 @@ public class S06_method_techniques {
         int levelCompleted = 5;
         int bonus = 100;
 
-        calculateScore(gameOver, score, levelCompleted, bonus);
+        int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.err.println("The high score is " + highScore);
 
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
-        calculateScore(gameOver, score, levelCompleted, bonus);
+
+        System.err.println("The next high score is " + calculateScore(gameOver, score, levelCompleted, bonus));
 
     }
 
-    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         int finalScore = score;
         if (gameOver) {
             finalScore += (levelCompleted * bonus);
             finalScore += 1000;
-            System.err.println("Your final score is " + finalScore);
         }
+        return finalScore;
     }
 }
