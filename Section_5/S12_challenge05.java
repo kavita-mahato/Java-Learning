@@ -18,5 +18,8 @@ If it's divisible by 100, it has to be divisible by 400.
 package Section_5;
 
 public class S12_challenge05 {
-    
+    public static void main(String[] args) {
+        System.out.println("\n");
+        
+    }
 }

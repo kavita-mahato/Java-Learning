@@ -6,5 +6,8 @@ The method should return boolean and it needs to return true if two double numbe
 package Section_5;
 
 public class S13_challenge06 {
-    
+    public static void main(String[] args) {
+        System.out.println("\n");
+        
+    }
 }

@@ -12,5 +12,8 @@ If the hourOfDay parameter is less than 0 or greater than 23 return false.
 package Section_5;
 
 public class S11_challenge04 {
-    
+    public static void main(String[] args) {
+        System.out.println("\n");
+        
+    }
 }

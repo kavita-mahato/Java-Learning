@@ -10,5 +10,8 @@ The method should return boolean and it needs to return true if the parameter is
 package Section_5;
 
 public class S15_challenge08 {
-    
+    public static void main(String[] args) {
+        System.out.println("\n");
+        
+    }
 }

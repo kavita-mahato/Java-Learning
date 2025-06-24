@@ -14,8 +14,25 @@ If the parameter kiloBytes is less than 0 then print the text "Invalid Value"
 
 package Section_5;
 
+import java.util.Scanner;
+
 public class S10_challenge03 {
     public static void main(String[] args) {
-        
+        System.out.println("\n");
+        Scanner sc = new Scanner(System.in);
+          System.out.print("Enter KB: ");
+          int kb = sc.nextInt();
+          printMegaBytesAndKiloBytes(kb);
+          sc.close();
+    }
+
+    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
+        if (kiloBytes < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            long megaBytes = kiloBytes / 1024;
+            long remainder = kiloBytes % 1024;
+            System.out.println(kiloBytes + " KB = " + megaBytes + " MB and " + remainder + " KB");
+        }
     }
 }
