@@ -11,9 +11,31 @@ If the hourOfDay parameter is less than 0 or greater than 23 return false.
 
 package Section_5;
 
+import java.util.Scanner;
+
 public class S11_challenge04 {
     public static void main(String[] args) {
         System.out.println("\n");
-        
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of hours: ");
+        int hours = sc.nextInt();
+        System.out.print("Is the dog barking? ");
+        boolean barking = sc.nextBoolean();
+
+        if (shouldWakeUp(barking, hours)) {
+            System.out.println("Wake up");
+        } else {
+            System.out.println("Relax");
+        }
+        sc.close();
+    }
+
+    public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
+        if (hourOfDay < 0 || hourOfDay > 23) {
+            return false;
+        } else {
+            return (barking && (hourOfDay < 8 || hourOfDay >= 23));
+        }
     }
 }
