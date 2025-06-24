@@ -17,9 +17,34 @@ If it's divisible by 100, it has to be divisible by 400.
 
 package Section_5;
 
+import java.util.Scanner;
+
 public class S12_challenge05 {
     public static void main(String[] args) {
         System.out.println("\n");
-        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please enter the number you need to check: ");
+        int year = sc.nextInt();
+
+        if (isLeapYear(year)) {
+            System.out.println("This is a leap year!");
+        } else {
+            System.out.println("This is not a leap year!");
+        }
+        sc.close();
+    }
+
+    public static boolean isLeapYear(int year) {
+        if (year < 1 || year > 9999) {
+            return false;
+        } else {
+            if (year % 4 == 0 && year % 100 != 0) {
+                return true;
+            } else if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
+                return true;
+            }
+            return false;
+
+        }
     }
 }
