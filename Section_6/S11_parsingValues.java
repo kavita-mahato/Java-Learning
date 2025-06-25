@@ -4,8 +4,11 @@ public class S11_parsingValues {
     public static void main(String[] args) {
         System.out.println("\n");
         int currentYear = 2025;
-        System.out.println(getInputFromConsole(currentYear));
-        System.out.println(getInputFromScanner(currentYear));
+        try{
+            System.out.println(getInputFromConsole(currentYear));
+        }catch (NullPointerException e){
+            System.out.println(getInputFromScanner(currentYear));
+        }
 
     }
     public static String getInputFromConsole(int currentYear) {
