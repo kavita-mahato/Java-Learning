@@ -5,11 +5,17 @@ public class S01_Classes_Objects {
         System.out.println("\n");
         
         Car car = new Car();
-        // car.make = "Porsche";
-        // car.model = "Carrera";
-        // car.color = "Black";
+        car.setMake("Porsche");
+        car.setModel("Carrera");
+        car.setColor("Black");
         System.out.println("make = " + car.getMake());
         System.out.println("model = " + car.getModel());
         car.describeCar();
+
+        Car targa = new Car();
+        targa.setMake("Porsche");
+        targa.setModel("Carrera");
+        targa.setColor("Black");
+        targa.describeCar();
     }
 }
