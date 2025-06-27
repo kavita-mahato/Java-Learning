@@ -9,6 +9,7 @@ public class Account {
 
     // Constructor 
     public Account(){
+        this("32144", 2.5, "Default name", "Default address", "Default phone");
         System.out.println("Empty constructor called.");
     }
 
@@ -19,6 +20,13 @@ public class Account {
         this.customerName = customerName;
         customerEmail = email;
         customerPhone = phone;
+    }  
+
+    public Account(String customerName, String customerEmail, String customerPhone) {
+        this("11111",100.55, customerName, customerEmail, customerPhone);
+        // this.customerName = customerName;
+        // this.customerEmail = customerEmail;
+        // this.customerPhone = customerPhone;
     }
 
     public void depositFunds(double depositAmount){
