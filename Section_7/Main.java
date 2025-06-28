@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("\n");
         for(int i = 1; i<= 5; i++){
-        Student s = new Student("592300" + i,
+        LPAStudent s = new LPAStudent("592300" + i,
         switch(i){
             case 1 -> "Kavita";
             case 2 -> "Antara";
@@ -17,5 +17,13 @@ public class Main {
         "Java");
     System.out.println(s);
     }
+    Student pojoStudent = new Student ("5923006", "Ann","05/11/2000", "Java");
+    LPAStudent recordStudent = new LPAStudent("5923007", "Bill", "05/11/2001", "JAVA");
+  
+    pojoStudent.setClassList(pojoStudent.getClassList() + ", Java OCP Exam 829");
+    // recordStudent.classList(recordStudent.classList() + ", Java OCP Exam 829");
+
+    System.out.println(pojoStudent.getName() + " is taking "+ pojoStudent.getClassList());
+    System.out.println(recordStudent.name() + " is taking "+ recordStudent.classList());
     }
 }
