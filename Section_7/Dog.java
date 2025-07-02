@@ -44,14 +44,14 @@ public class Dog extends Animal {
     private void bark(){
         System.out.print("Woof!");
     }
-    private void run(){
-        System.out.print("Dog running!");
-    }
+    // private void run(){
+    //     System.out.print("Dog running!");
+    // }
     private void walk(){
         System.out.print("Dog walking!");
     }
-    private void wagTail(){
-        System.out.print("Dog wagging!");
-    }
+    // private void wagTail(){
+    //     System.out.print("Dog wagging!");
+    // }
 
 }
