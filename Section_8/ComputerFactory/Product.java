@@ -1,4 +1,4 @@
-package Section_8;
+package Section_8.ComputerFactory;
 
 public class Product {
     private String model;
@@ -19,6 +19,10 @@ class Monitor extends Product {
     private String resolution;
 
     public Monitor(String model, String manufacturer) {
+        super(model, manufacturer);
+    }
+
+    public Monitor(String model, String manufacturer, int size, String resolution) {
         super(model, manufacturer);
         this.size = size;
         this.resolution = resolution;
@@ -54,14 +58,17 @@ class Motherboard extends Product {
 
 class ComputerCase extends Product {
     private String powerSupply;
+
     public ComputerCase(String model, String manufacturer) {
         super(model, manufacturer);
     }
+
     public ComputerCase(String model, String manufacturer, String powerSupply) {
         super(model, manufacturer);
         this.powerSupply = powerSupply;
     }
-    public void pressPowerButton(){
+
+    public void pressPowerButton() {
         System.out.println("Power button pressed");
     }
 }
