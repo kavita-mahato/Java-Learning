@@ -1,7 +1,7 @@
 public class SmartKitchen {
+    
     private CoffeMaker brewMaster;
     private Refrigerator iceBox;
-
     private DishWasher dishWasher;
 
     public SmartKitchen() {
