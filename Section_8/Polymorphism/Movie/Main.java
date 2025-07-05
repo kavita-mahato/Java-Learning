@@ -20,5 +20,6 @@ public class Main {
             Movie movie = Movie.getMovie(type, title);
             movie.watchMovie();
         }
+        s.close();
     }
 }

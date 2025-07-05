@@ -33,6 +33,9 @@ class Adventure extends Movie {
                 "Scary scene",
                 "Something bad happens");
     }
+    public void watchAdventure() {
+        System.out.println("Watching an Adventure!");
+    }
 }
 
 class Comedy extends Movie {
