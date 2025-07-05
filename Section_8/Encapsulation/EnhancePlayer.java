@@ -1,4 +1,4 @@
-package Section_8.Encapsulation;
+package Encapsulation;
 
 public class EnhancePlayer {
     private String fullName; 

@@ -1,5 +1,4 @@
-package Section_8.EncapsulationChallenge;
-
+package EncapsulationChallenge;
 public class Printer {
     private int tonerLevel;
     private int pagesPrinted;

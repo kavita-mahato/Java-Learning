@@ -1,4 +1,4 @@
-package Section_8.EncapsulationChallenge;
+package EncapsulationChallenge;
 
 public class Main {
     public static void main(String[] args) {

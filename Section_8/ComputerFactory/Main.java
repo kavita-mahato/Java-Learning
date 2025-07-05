@@ -1,4 +1,4 @@
-package Section_8.ComputerFactory;
+package ComputerFactory;
 
 public class Main {
     public static void main(String[] args) {

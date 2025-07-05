@@ -1,4 +1,4 @@
-package Section_8.Encapsulation;
+package Encapsulation;
 
 public class Player {
     public String fullName;
